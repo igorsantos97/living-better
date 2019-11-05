@@ -10,12 +10,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'opensans-regular';
-  line-height: 1.4;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-family: 'opensans-light';
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
 .tittle-style {
@@ -24,6 +35,21 @@ p {
   font-size: 22px;
   font-family: 'cairo-bold';
 }
+
+.btn {
+  background: var(--pink);
+  color: #fff;
+  display: inline-block;
+  font-family: 'opensans-light';
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
 
 .wrapper {
   display: grid;
@@ -38,16 +64,72 @@ p {
 }
 
 header {
-  background: red;
+  align-items: center;
+  background: var(--white);
   grid-area: header;
-  padding: 20px 5%;
+  padding: 10px 5%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li + li {
+  margin-left: 30px;
+}
+
+header ul a {
+  color: var(--black);
+  font-family: 'cairo-bold';
+  padding: 10px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+header ul a:hover {
+  color: var(--pink);
+}
+
+#logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: 'cairo-bold';
+  color: var(--black);
+}
+
+#logo span {
+  color: var(--pink);
 }
 
 .banner-top {
-  background: yellow;
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
   grid-area: banner;
+  flex-direction: column;
+  justify-content: center;
   min-height: 450px;
   padding: 0 5%;
+}
+
+.banner-top div {
+  width: 500px
+}
+
+.banner-top h1 {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.banner-top p {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .boxs-services {
