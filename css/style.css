@@ -3,6 +3,7 @@
 :root {
   --black: #121212;
   --pink: #ff75b3;
+  --white: #fff;
 }
 
 body {
@@ -29,16 +30,55 @@ p {
   grid-template-areas: 
     'header header'
     'banner banner'
+    'boxs-services boxs-services'
+    'signature signature'
+    'portfolio portfolio'
+    'footer footer'
   ;
 }
 
 header {
   background: red;
   grid-area: header;
+  padding: 20px 5%;
 }
 
-.banner {
+.banner-top {
   background: yellow;
   grid-area: banner;
   min-height: 450px;
+  padding: 0 5%;
+}
+
+.boxs-services {
+  display: grid;
+  grid-area: boxs-services;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px 5%; 
+}
+
+.boxs-services .box{
+  background: var(--pink);
+}
+
+.signature {
+  background: peru;
+  padding: 40px 0;
+  grid-area: signature;
+}
+
+.portfolio {
+  grid-area: portfolio;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  background: var(--black);
+  display: grid;
+  grid-area: footer;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 5%;
 }
