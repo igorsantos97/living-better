@@ -29,6 +29,10 @@ p {
   letter-spacing: .5px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .tittle-style {
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -44,9 +48,11 @@ p {
   font-weight: 600;
   letter-spacing: 1.5px;
   padding: 10px 25px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  width: 105px
 }
 
 
@@ -113,7 +119,7 @@ header ul a:hover {
   grid-area: banner;
   flex-direction: column;
   justify-content: center;
-  min-height: 450px;
+  min-height: 480px;
   padding: 0 5%;
 }
 
@@ -136,24 +142,83 @@ header ul a:hover {
   display: grid;
   grid-area: boxs-services;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  padding: 20px 5%; 
+  grid-gap: 40px;
+  padding: 40px 5%; 
 }
 
-.boxs-services .box{
-  background: var(--pink);
+.boxs-services .box {
+  border: solid 1px var(--pink);
+  padding: 20px;
+  text-align: center;
+}
+
+.boxs-services .box img {
+  margin-bottom: 2px;
+  width: 60px;
 }
 
 .signature {
-  background: peru;
-  padding: 40px 0;
+  background: #454545;
+  padding: 80px;
   grid-area: signature;
 }
 
+.signature div {
+  text-align: center;
+  margin: auto;
+  width: 65%;
+}
+
+.signature img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.signature h2 {
+  color: var(--pink);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.signature p {
+  color: var(--white);
+}
+
 .portfolio {
+  display: grid;
   grid-area: portfolio;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.description-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.description-portfolio .btn {
+  margin-top: 20px;
+}
+
+.img-portfolio-1 {
+  background: url(../img/portifolio-1.jpg);
+  background-size: cover;
+  background-position: start;
+}
+
+.img-portfolio-5 {
+  background: url(../img/portifolio-5.jpg);
+  background-size: cover;
+}
+
+.portfolio .grid-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio .grid-four img {
+  width: 100%;
 }
 
 footer {
