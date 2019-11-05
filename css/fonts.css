@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'cairo-semibold';
+  src: url('../fonts/cairo-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cairo-bold';
+  src: url('../fonts/cairo-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans-light';
+  src: url('../fonts/opensans-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans-regular';
+  src: url('../fonts/opensans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p{
+  font-family: 'opensans-light' !important;
+  font-weight: 600;
+  font-size: 16px;
+}
