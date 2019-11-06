@@ -124,7 +124,7 @@ header ul a:hover {
 }
 
 .banner-top div {
-  width: 500px
+  max-width: 500px;
 }
 
 .banner-top h1 {
