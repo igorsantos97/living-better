@@ -13,12 +13,12 @@
   <div class="wrapper">
     <header>
       <a href="#" id="logo"><span>Liv</span>ing Better</a>
-      <nav>
+      <nav class="js-menu">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#port">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -30,9 +30,12 @@
           veritatis earum sint, omnis debitis voluptates magnam, nisi perferendis.</p>
         <a href="#" class="btn">Take a look</a>
       </div>
+      <a href="#services" class="arrow-down">
+        <img src="img/icons/icon-arrow.png" alt="Arrow down">
+      </a>
     </section>
 
-    <div class="boxs-services">
+    <div class="boxs-services" id="services">
       <div class="box">
         <img src="img/icons/support.png" alt="icon 1">
         <h2 class="tittle-style">Support</h2>
@@ -68,7 +71,7 @@
       </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="port">
       <div class="img-portfolio-1"></div>
 
       <div class="grid-two">
@@ -139,11 +142,13 @@
           </div>
       </div>
       <div>
-        <h4 class="tittle-style">Newslatter</h4>
-        <a href="#" class="btn">Subscribe</a>
+        <h4 class="tittle-style">Contact us</h4>
+        <a href="#" class="btn">Send a email</a>
       </div>
     </footer>
   </div>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

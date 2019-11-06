@@ -121,6 +121,7 @@ header ul a:hover {
   justify-content: center;
   min-height: 68vh;
   padding: 0 5%;
+  position: relative;
 }
 
 .banner-top div {
@@ -136,6 +137,23 @@ header ul a:hover {
   color: #fff;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.banner-top .arrow-down {
+  animation: animaArrow ease-in infinite alternate .5s;
+  bottom: 5px;
+  left: 49%;
+  position: absolute;
+  width: 30px;
+}
+
+@keyframes animaArrow {
+  from {
+    bottom: 20px;
+  }
+  to {
+    bottom: 0;
+  }
 }
 
 .boxs-services {
@@ -264,6 +282,10 @@ footer h4 {
   margin-bottom: 20px;
 }
 
+footer .btn {
+  font-size: 12px;
+}
+
 footer .date-post {
   font-size: 14px;
 }
@@ -301,7 +323,7 @@ footer p {
   color: var(--white);
 }
 
-footer > div:nth-child(1) img{
+footer > div:nth-child(1) img {
   border-radius: 50%;
   display: inline-block;
   height: 100px;
