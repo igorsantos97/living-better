@@ -1,7 +1,7 @@
 export default function initScrollSuave() {
 
   const linksInternos = document.querySelectorAll('[data-scroll-suave] a[href^="#"]');
-  console.log(linksInternos)
+  // console.log(linksInternos)
   const arrowDown = document.querySelector('.arrow-down');
 
   function scrollToSection(e) {
